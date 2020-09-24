@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+        body{
+            background-color:#ffebaf;
+            padding:50px;
+        }
+        .c1{
+            background-color:#86c4b5;
+            padding:10px;
+            text-align:center;
+            color:#fff;
+            font-weight: bold;
+            font-size:25px;
+        }
+        .c2{
+            background-color:#ff7262;
+            padding:10px;
+            text-align:center;
+            color:#fff;
+            font-weight: bold;
+            font-size:25px;
+        }
+        .c3{
+            background-color:#ffc761;
+            padding:10px;
+            text-align:center;
+            color:#fff;
+            font-weight: bold;
+            font-size:25px;
+        }
+        
+        /*fraction*/
+        .container_1{
+            display:grid;
+            grid-gap: 3px;
+            
+            /* Method 1 */
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 50px 50px;
+            
+            /*  Method 2
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2,50px);
+            */
+            
+            /*  Method 3
+            grid-template: repeat(2,50px) / repeat(3,1fr);
+            */
+        }
+    </style>
+  </head>
+  <body>
+        <div class="container_1">
+            <div class="c1">1</div>
+            <div class="c2">2</div>
+            <div class="c3">3</div>
+            <div class="c3">4</div>
+            <div class="c1">5</div>
+            <div class="c2">6</div>
+            <div class="c2">7</div>
+            <div class="c3">8</div>
+            <div class="c1">9</div>
+            <div class="c3">10</div>
+            <div class="c1">11</div>
+            <div class="c2">12</div>
+        </div>
+  </body>
+</html>
